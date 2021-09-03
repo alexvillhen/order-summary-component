@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](https://github.com/alexvillhen/order-summary-component/blob/main/screenshot.jpg)
+![alt text](https://github.com/alexvillhen/order-summary-component/blob/main/Screenshot.jpg?raw=true)
 
 
 ### Links
