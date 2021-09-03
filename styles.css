@@ -1,0 +1,180 @@
+:root{
+    --pale-blue:hsl(225,100%,94%);
+    --bright-blue:hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+html{
+    font-size: 16px;
+}
+
+/*GLOBAL STYLES*/
+
+img{
+    width:100%;
+}
+
+body{
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.desktop-bg{
+    display:none;
+}
+
+.phone-bg{  
+    position:absolute;
+    z-index:-1;
+}
+
+/* FONTS */
+html{
+    font-family: "Red Hat Display";
+    background-color: var(--pale-blue);
+}
+
+h1{
+    margin:0;
+}
+
+h2{
+    margin:0;
+    font-size:1.2rem;
+}
+
+p{
+    margin:0;
+}
+
+
+/* LAYOUT */
+
+.phone-bg{
+    position: absolute;
+    z-index: -1;
+    top:0;
+    left:0;
+}
+
+.desktop-bg{
+    display: none;
+}
+
+main{
+    text-align: center;
+
+}
+
+.container{
+    position:relative;
+    background-color: var(--Very-pale-blue);
+    width:90%;
+    max-width:500px ;
+    margin:auto;
+    padding-bottom:2.5em;
+    border-radius:10px;
+    overflow: hidden; /*used overflow so I don't have to edit the borders of the image with border-top-left/right-radius */
+}
+
+#hero{
+    margin-bottom:.6em;
+}
+
+.main-info{
+    margin:1.5em;
+    margin-bottom:2.3em;
+}
+
+.main-info h1{
+    font-size: 1.6rem;
+    margin-bottom:.3em;
+}
+
+.main-info p{
+    color: var(--Desaturated-blue);
+}
+
+.pricing{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    width:90%;
+    margin:auto;
+    margin-bottom:2.3em;
+    /* border:solid 1px red; */
+}
+
+.pricing img{
+    width:60px;
+}
+
+.pricing a{
+    color:var(--bright-blue);
+    font-weight: bolder;
+    width: 30%;
+}
+
+.pricing p{
+    color:var(--Desaturated-blue);
+}
+
+.price{
+    width:70%;
+    /* border:solid blue 1px; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.plan{
+    margin-left:10px;
+}
+
+#payment{
+    display: block;
+    width:70%;
+    margin:2.3em auto;
+    cursor: pointer;
+    padding:1.15em 0;
+    border-radius: 15px;
+    border:none;
+    background-color: var(--bright-blue);
+    color:white;
+    font-weight: bolder;
+    font-family: "Red Hat Display";
+    box-shadow:0px 15px 16px -3px rgba(56,41,224,0.34);
+}
+
+#payment:hover,
+#payment:active,
+#payment:focus{
+    background-color: #766cf1;
+}
+
+#cancel{
+    font-weight:800;
+    color:var(--Desaturated-blue);
+    text-decoration: none;
+}
+
+
+@media screen and (min-width: 950px){
+    .phone-bg{
+        display: none;
+    }
+
+    .desktop-bg{
+        display: block;
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+    }
+}
