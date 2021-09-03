@@ -38,7 +38,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://alexvillhen.github.io/order-summary-component/)
+- Live Site URL: [live site URL](https://alexvillhen.github.io/order-summary-component/)
 
 ## My process
 
